@@ -1,310 +1,183 @@
-/* место для вашего кода */
-.header {
-    padding: 92px 50px 96px;
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-}
-
-.header__menu_list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 26px;
-    font-size: 18px;
-    align-items: center;
-    justify-content: start;
-}
-
-.header__links-list-item_no-bullit {
-    list-style: none;
-}
-
-.header__links-list-item {
-    list-style: circle;
-    text-underline-offset: 0.25em;
-}
-
-.header__logo {
-    width: 148px;
-    height: 105px;
-    align-items: center;
-    justify-content: center;
-}
-
-.address_header_position {
-    justify-self: end;
-}
-
-.address {
-    max-width: 240px;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 1.5;
-}
-
-.header_address {
-    text-underline-offset: 0.25em;
-    line-height: 1.5;
-    list-style: none;
-    justify-self: end;
-}
-
- .cover {
-    background-image: url("../images/cover.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    padding: 165px 50px 50px;
-    position: relative;
-    z-index: -2;
-}
-
-.overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: black;
-    opacity: 60%;
-    z-index: -1;
-}
-
-.cover__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.286;
-}
-
-.title {
-    color: white;
-    font-size: 100px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-}
-
-.aligned-text {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.aligned-text_center {
-    display: flex;
-    justify-content: center;
-    margin-right: -0.3em;
-}
-
-.aligned-text_right {
-    display: flex;
-    justify-content: end;
-    margin-right: -0.3em;
-}
-
-.cover__description {
-    margin-top: 106px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cover__description-text {
-    display: flex;
-    align-items: center;
-    word-spacing: 0.8em;
-    text-transform: uppercase;
-    color: white;
-    font-size: 22px;
-}
-
-.bet-button {
-    background-color: transparent;
-    border-width: 1px;
-    border-color: white;
-    text-transform: uppercase;
-    color: white;
-    font-size: 22px;
-    padding: 12px 32px 11px 31px;
-
-}
-
-.lots {
-    margin-top: 180px;
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-}
-
-.lots__heading {
-    margin-left: 50px;
-    margin-bottom: 27px;
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-.lots__card-list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 25px;
-}
-
-.card {
-    width: 334px;
-    height: 596px;
-    position: relative;
-    color: white;
-    padding: 48px 40px;
-}
-
-.card_type_film {
-    background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: -2;
-}
-
-.card_type_book {
-    background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: -2;
-}
-
-.card_type_picture {
-    background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: -2;
-}
-
-.card-information {
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.card__title {
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-    font-size: 18px;
-}
-
-.card__text {
-    font-size: 20px;
-}
-
-.look_more {
-    display: block;
-    margin-top: 30px;
-    margin-left: 50px;
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-    font-size: 20px;
-}
-
-.about {
-    margin-bottom: 180px;
-    margin-right: 24px;
-    margin-left: 24px;
-}
-
-.about__column {
-    display: grid;
-    grid-template-columns: 240px 693px;
-    grid-gap: 72px;
-    justify-content: center;
-}
-
-.about__logo {
-    justify-self: right;
-    background-color: black;
-    border-radius: 100rcap;
-    width: 240px;
-    height: 240px;
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
-
-.about__logo-image {
-    width: 148px;
-    height: auto;
-}
-
-.about_information {
-    margin-top: 133px;
-    justify-self: left;
-}
-
-.about__title {
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-.about__text {
-    margin-top: 100px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.about_paragraph-one {
-    width: 688px;
-}
-
-.section_auction_name {
-    margin-bottom: 100px;
-}
-
-.footer {
-    display: grid;
-    margin-right: 50px;
-    margin-left: 50px;
-    grid-template-columns: 1fr 164px 1fr;
-    margin-bottom: 82px;
-}
-
-.footer_address {
-    text-underline-offset: 0.25em;
-    line-height: 1.5;
-    list-style: none;
-}
-
-.footer__menu {
-    justify-self: center;
-}
-
-.footer__menu-list {
-    line-height: 1.5;
-    list-style: none;
-}
-
-.footer__menu-list-item {
-    text-align: center;
-}
-
-.footer__menu-link_active {
-    text-underline-offset: 0.25em;
-}
-
-.footer__social-list {
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    justify-self: end;
-}
-
-.footer__social-list-item {
-    list-style: none;
-}
-
-.footer__social-icon {
-    width: 48px;
-    height: auto;
-}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class = "header">
+      <nav class = "header_menu">
+        <ul class = "header__menu_list">
+          <li class = "header__links-list-item_no-bullit">
+            <a class = "header__link header__link_active">Главная</a>
+          </li>
+          <li class = "header__links-list-item">
+            <a href = "#lots" class = "header__link">Посмотреть лоты</a>
+          </li>
+          <li class = "header__links-list-item">
+            <a href = "#about" class = "header__link">Об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class = "header__logo" href = "#">
+        <img class = "header__logo-image"
+        src = "./images/logo-black.svg"
+        alt = "Чёрный логотип"/>
+      </a>
+      <div class = "address_header_position">
+      <address class = "address">
+        <ul class = "header_address">
+          <li>
+            <a href = "tel:+99995555555">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a href = "mailto:info@sobaka.ge">info@sobaka.ge</a>
+          </li>
+          <li>
+            <span>наб. Принсенграхт 263- <br>265, Амстердам</span>
+          </li>
+        </ul>
+      </address>
+      </div>
+    </header>
+    <main>
+      <section class = "cover">
+        <div class = "overlay">
+        </div>
+        <div class = "cover__title">      
+          <h1>
+            <span class = "title aligned-text">Оно</span>
+            <span class = "title aligned-text_center">тебе</span>
+            <span class = "title aligned-text_right">надо</span>
+          </h1>
+        </div>  
+        <div class = "cover__description">
+          <p class = "cover__description-text">Аукцион вещей, в которые никто не верил</p>
+          <button class = "bet-button">Сделать ставку</button>
+        </div>
+      </section>
+      <section class = "lots" id = "lots">
+        <h2 class = "lots__heading">Лоты</h2>
+        <ul class = "lots__card-list">
+          <li class = "lots__card-list-item card card_type_film">
+            <div class = "overlay">
+            </div>
+            <a class = "card-link" href = "#">
+              <div class = "card-information">
+              <article class = "card__title">
+                <h3>Фильм режиссёра, который бросил киношколу</h3>
+              </article>
+              <div class = "card__text">
+                <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </div>
+              </div>
+            </a>
+          </li>
+          <li class = "lots__card-list-item card card_type_book">
+            <div class = "overlay">
+            </div>
+            <a class = "card-link" href = "#">
+              <div class = "card-information">
+              <article class = "card__title">
+                <h3>Книга, где описан один скучный день из жизни рекламного агента</h3>
+              </article>
+              <div class = "card__text">
+                <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </div>
+              </div>
+            </a>
+          </li>
+          <li class = "lots__card-list-item card card_type_picture">
+            <div class = "overlay">
+            </div>
+            <a class = "card-link" href = "#">
+              <div class = "card-information">
+              <article class = "card__title">
+                <h3>Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              </article>
+              <div class = "card__text">
+                <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href = "#"><span class = "look_more">посмотреть больше</span></a>
+      </section>
+      <section class = "about" id = "about">
+        <div class = "about__column">
+          <div class = "about__logo">
+            <img class = "about__logo-image"
+            src = "./images/logo-white.svg"
+            alt = "Белый логотип"/>
+          </div>
+          <div class = "about_information">
+            <h2 class = "about__title">Об аукционе</h2>
+            <div class = "about__text">
+              <p class = "about_paragraph-one">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+              <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря<br>
+на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class = "footer">
+      <address class = "address">
+        <ul class = "footer_address">
+          <li>
+            <a href = "tel:+99995555555">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a href = "mailto:info@sobaka.ge">info@sobaka.ge</a>
+          </li>
+          <li>
+            <span>наб. Принсенграхт 263-265, Амстердам</span>
+          </li>
+        </ul>
+      </address>
+      <nav class = "footer__menu">
+        <ul class = "footer__menu-list">
+          <li class = "footer__menu-list-item">
+            <a href = "#" class = "footer__menu-link">главная</a>
+          </li>
+          <li class = "footer__menu-list-item">
+            <a href = "#" class = "footer__menu-link footer__menu-link_active">посмотреть лоты</a>
+          </li>
+          <li class = "footer__menu-list-item">
+            <a href = "#about" class = "footer__menu-link footer__menu-link_active">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class = "footer__social-list">
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link" href = "#">
+            <img class = "footer__social-icon"
+            src = "./images/yt.svg"
+            alt = "Ютуб">
+          </a>
+        </li>
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link" href = "#">
+            <img class = "footer__social-icon"
+            src = "./images/vk.svg"
+            alt = "ВКонтакте">
+          </a>
+        </li>
+        <li class = "footer__social-list-item">
+          <a class = "footer__social-link" href = "#">
+            <img 
+            class = "footer__social-icon"
+            src = "./images/pinterest.svg"
+            alt = "Пинтерест">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
